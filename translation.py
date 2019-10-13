@@ -2,7 +2,7 @@ import re
 import time
 import sys
 import os
-from pprint import pprint
+# from pprint import pprint
 
 from lang_map import country2langs
 
@@ -106,7 +106,7 @@ class Translate:
         matches = matches.groupdict()
         matches['src'] = next(filter(None, [matches['src'], matches['src2']]), False)
         matches['dest'] = next(filter(None, [matches['dest'], matches['dest2']]), False)
-        pprint(matches)
+        print(matches)
         if matches['start']:
             self.translate = True
         if matches['stop']:
