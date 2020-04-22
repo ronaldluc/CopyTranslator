@@ -93,6 +93,7 @@ class Translate:
             return None
         else:
             self.state()
+
             # self.src = self.translator.detect(text).lang
             text = remove_special(text)
             text = remove_all_caps(text, self.src)
