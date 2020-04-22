@@ -38,6 +38,7 @@ def remove_all_caps(text, src):
 # text_sentences = [x.strip() for x in re.split(r'[.!?]', text)]
 # # text_sentences[-1] = text_sentences[-1][:-1]
 #
+#
 # res = []
 # for sentence in text_sentences:
 #     res = ' '.join([x.lower() if x.isupper() else x for x in text.split(' ')])
